@@ -2,12 +2,15 @@
 #include<cmath>
 using namespace std;
 //-----------------------------------------
-class Data{
-class NODE
+class DATA
+{
+  public:
+  bool state = true;
+};
+class NODE: public DATA
 {
 public:
   unsigned int index  ;
-  bool state = true;
   NODE* next;
 };
 //------------------------------------------
