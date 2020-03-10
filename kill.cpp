@@ -89,11 +89,8 @@ int main()
     while(head->next != (head->next)->next)
       {
          a.shift(head , k-1);
-          if(((head->next)->next)->state)
-            {
-                a.kill_next_guy(head->next);
-            }
-            a.print(n);
+         a.kill_next_guy(head->next);
+         a.print(n);
       }
   cout << "survivor is " << ((head->next))->index;
 return 0;
