@@ -22,6 +22,7 @@ public:
   {
    circle = new NODE[x];
    circle[x-1].next = &circle[0];
+   circle[x-1].index = x;
    for(int i = 0; i < x-1 ; i++)
       {
         circle[i].index = i+1;
