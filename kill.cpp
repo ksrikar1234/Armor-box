@@ -95,6 +95,7 @@ int main()
     head->next  = &(a.circle[0]);
     system("clear");
     cout << " initial states of individual persons" << endl;
+    a.print(n);
     cout << " Starting execution" << endl;
     while(head->next != (head->next)->next)
          {
@@ -102,7 +103,6 @@ int main()
            a.shift(head , k-1);
            a.kill_next_guy(head->next);
          }
-         a.print(n);
     cout << "survivor is " << (head->next)->index;
     return 0;
 }
